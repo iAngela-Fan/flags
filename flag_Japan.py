@@ -1,0 +1,22 @@
+'''日本國旗'''
+import turtle as t
+t.clear()
+t.reset()
+t.Pen()
+t.pensize(5)
+t.up()
+t.goto(200,100)
+t.down()
+for i in range(2):
+    t.right(90)
+    t.forward(200)
+    t.right(90)
+    t.forward(400)
+t.up()
+t.goto(0,-50)
+t.down()
+t.color('red')
+t.begin_fill()
+t.circle(50)
+t.end_fill()
+t.done()
