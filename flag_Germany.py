@@ -1,42 +1,22 @@
-'''Germany Flag'''
+def tri_flag(c1,c2,c3):
+    a=[c1,c2,c3]
+    for i in range(3):
+       t.up()
+       t.goto(200,100-200*i/3)
+       t.down()
+       t.color(a[i])
+       t.begin_fill()
+       for j in range(2):
+            t.right(90)
+            t.forward(200/3)
+            t.right(90)
+            t.forward(400)
+       t.end_fill()
+    
 import turtle as t
 t.clear()
 t.reset()
 t.Pen()
 t.pensize(4)
-t.up()
-t.goto(200,100)
-t.down()
-t.color('black')
-t.begin_fill()
-for i in range(2):
-    t.right(90)
-    t.forward(200/3)
-    t.right(90)
-    t.forward(400)
-t.end_fill()
-t.up()
-
-t.goto(200,100-200/3)
-t.down()
-t.color('red')
-t.begin_fill()
-for i in range(2):
-    t.right(90)
-    t.forward(200/3)
-    t.right(90)
-    t.forward(400)
-t.end_fill()
-t.up()
-
-t.goto(200,100-400/3)
-t.down()
-t.color('yellow')
-t.begin_fill()
-for i in range(2):
-    t.right(90)
-    t.forward(200/3)
-    t.right(90)
-    t.forward(400)
-t.end_fill()
+tri_flag('black','red','yellow')
 t.done()
