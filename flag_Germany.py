@@ -1,0 +1,42 @@
+'''Germany Flag'''
+import turtle as t
+t.clear()
+t.reset()
+t.Pen()
+t.pensize(4)
+t.up()
+t.goto(200,100)
+t.down()
+t.color('black')
+t.begin_fill()
+for i in range(2):
+    t.right(90)
+    t.forward(200/3)
+    t.right(90)
+    t.forward(400)
+t.end_fill()
+t.up()
+
+t.goto(200,100-200/3)
+t.down()
+t.color('red')
+t.begin_fill()
+for i in range(2):
+    t.right(90)
+    t.forward(200/3)
+    t.right(90)
+    t.forward(400)
+t.end_fill()
+t.up()
+
+t.goto(200,100-400/3)
+t.down()
+t.color('yellow')
+t.begin_fill()
+for i in range(2):
+    t.right(90)
+    t.forward(200/3)
+    t.right(90)
+    t.forward(400)
+t.end_fill()
+t.done()
